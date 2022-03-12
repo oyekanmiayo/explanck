@@ -9,7 +9,7 @@ async function solve() {
         expression: inputElement.value
     }
 
-    let api = `http://localhost:8080/interpret`
+    let api = `https://explanck.herokuapp.com/interpret`
     let params = {
         headers: {
             'Content-Type': 'application/json'
