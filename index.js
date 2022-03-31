@@ -19,5 +19,7 @@ async function solve() {
     }
     const response = await fetch(api, params);
     const data = await response.json();
+    outputElement.style.color = 'black';
     outputElement.innerText = data.value;
+
 }
