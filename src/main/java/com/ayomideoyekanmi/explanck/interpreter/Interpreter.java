@@ -24,13 +24,7 @@ public class Interpreter implements Expr.Visitor<Object> {
             case MINUS:
                 return (double) left - (double) right;
             case PLUS:
-                if (left instanceof Double && right instanceof Double) {
-                    return (double) left + (double) right;
-                }
-
-                if (left instanceof String && right instanceof String) {
-                    return (String) left + (String) right;
-                }
+                return (double) left + (double) right;
             case SLASH:
                 return (double) left / (double) right;
             case STAR:

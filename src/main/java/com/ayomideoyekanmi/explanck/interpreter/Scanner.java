@@ -51,6 +51,7 @@ public class Scanner {
                 if (isDigit(c)) {
                     addNumberToken();
                 } else {
+                    // We should throw this
                     Explanck.error("Unexpected character: " + c);
                 }
         }

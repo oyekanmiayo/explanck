@@ -17,6 +17,7 @@ public class Explanck {
 
     public static void main(String[] args) {
         String exp = "2 ^ 3";
+        exp = "120+12.3*53-9";
         Scanner scanner = new Scanner(exp);
         List<Token> tokens = scanner.scanTokens();
         System.out.println(tokens);
